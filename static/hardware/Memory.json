@@ -1,0 +1,10 @@
+{
+ "ram": {
+  "total_memory": 32717,
+  "buffers": 0,
+  "commit_limit": 0
+ },
+ "swap": {
+  "total": 37581
+ }
+}

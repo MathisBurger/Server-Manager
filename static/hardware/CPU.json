@@ -1,0 +1,8 @@
+{
+ "num_cpu": 1,
+ "cores": 12,
+ "name": "AMD Ryzen 5 2600 Six-Core Processor            ",
+ "max_clock": 3400,
+ "cache_size": 0,
+ "cpu_family": "107"
+}
