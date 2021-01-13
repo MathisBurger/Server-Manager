@@ -1,4 +1,4 @@
-package static
+package monitoring
 
 import (
 	"encoding/json"

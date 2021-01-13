@@ -1,4 +1,4 @@
-package static
+package monitoring
 
 import (
 	"encoding/json"
@@ -7,12 +7,12 @@ import (
 	"os"
 )
 
-func GetStaticCPUController(c *fiber.Ctx) error {
-	f, err := os.Open("./static/hardware/CPU.json")
+func GetStaticStorageController(c *fiber.Ctx) error {
+	f, err := os.Open("./static/hardware/Storage.json")
 	if err != nil {
 		return err
 	}
-	ans := new(system.CPU_Info)
+	ans := new(system.StorageInfo)
 	err = json.NewDecoder(f).Decode(ans)
 	return c.JSON(ans)
 }
