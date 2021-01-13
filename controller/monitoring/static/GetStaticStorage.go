@@ -7,12 +7,12 @@ import (
 	"os"
 )
 
-func GetStaticMemoryController(c *fiber.Ctx) error {
-	f, err := os.Open("./static/hardware/Memory.json")
+func GetStaticStorageController(c *fiber.Ctx) error {
+	f, err := os.Open("./static/hardware/Storage.json")
 	if err != nil {
 		return err
 	}
-	ans := new(system.MemoryInfo)
+	ans := new(system.StorageInfo)
 	err = json.NewDecoder(f).Decode(ans)
 	return c.JSON(ans)
 }

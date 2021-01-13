@@ -18,7 +18,8 @@ func main() {
 
 	// Static Calls
 	app.Get("/static/getCPU-Info", static.GetStaticCPUController)
-	app.Get("/static/getMemory-Info", static.GetStaticmemoryController)
+	app.Get("/static/getMemory-Info", static.GetStaticMemoryController)
+	app.Get("/static/getStorage-Info", static.GetStaticStorageController)
 	app.Get("/static/updateHardware", monitoring.UpdateHardwareController)
 
 	app.Listen(":8080")
@@ -27,4 +28,5 @@ func main() {
 func UpdateHardwareStatus() {
 	hardware.ReloadCPU()
 	hardware.ReloadMemory()
+	hardware.ReloadStorage()
 }

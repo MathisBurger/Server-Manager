@@ -1,0 +1,25 @@
+{
+ "num": 2,
+ "partitions": [
+  {
+   "device": "C:",
+   "fs_type": "NTFS",
+   "mountpoint": "C:",
+   "opts": "rw.compress",
+   "used": 140.17846298217773,
+   "free": 92.08901977539062,
+   "total": 232.26748275756836,
+   "percent": 60.35216867980202
+  },
+  {
+   "device": "D:",
+   "fs_type": "NTFS",
+   "mountpoint": "D:",
+   "opts": "rw.compress",
+   "used": 145.10944366455078,
+   "free": 786.386646270752,
+   "total": 931.4960899353027,
+   "percent": 15.578105504944137
+  }
+ ]
+}

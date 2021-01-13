@@ -15,6 +15,7 @@ type UpdateHardwareResponse struct {
 func UpdateHardwareController(c *fiber.Ctx) error {
 	hardware.ReloadCPU()
 	hardware.ReloadMemory()
+	hardware.ReloadStorage()
 	return c.JSON(UpdateHardwareResponse{
 		"Successfully updated static hardware",
 		"alert alert-success",
