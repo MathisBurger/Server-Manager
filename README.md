@@ -6,4 +6,5 @@ Furthermore the new version contains websockets for continuous communication wit
 
 ## Disclaimer
 This is only an fun project. It is not made for the use in production.
-I used it for growing my experience with golang
+I used it for growing my experience with golang.
+<b>I apologize for the shitty codebase and the missing comments.</b>
